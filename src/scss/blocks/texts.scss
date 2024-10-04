@@ -1,1 +1,17 @@
+.preview-txt {
+  color: var(--white);
+  font-size: var(--font-m);
+  &--small {
+    font-size: var(--font-s);
+  }
+  text-transform: uppercase;
+  font-family: var(--text-font);
+  font-weight: 500;
 
+  &--kerning-m {
+    letter-spacing: 0.25rem;
+  }
+  &--kerning-s {
+    letter-spacing: 0.05rem;
+  }
+}

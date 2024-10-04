@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
   font-family: sans-serif;
+  background-color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../assets/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
 }

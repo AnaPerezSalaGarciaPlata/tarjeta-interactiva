@@ -4,11 +4,75 @@
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Interactive card</title>
   </head>
   <body>
+    <div id="root">
+      <aside class="card-preview">
+        <div class="card-preview__content card-preview__content--front">
+          <div>
+            <span class="preview-txt preview-txt--kerning-m"
+              >0000 0000 0000 0000</span
+            >
+            <div class="flex-spacebetween">
+              <span
+                class="preview-txt preview-txt--small preview-txt--kerning-s"
+                >Jane Applessed</span
+              >
+              <span class="preview-txt preview-txt--small">00/00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-preview__content card-preview__content--back">
+          <span class="preview-txt preview-txt--cvc">000</span>
+        </div>
+      </aside>
+      <main class="card-userinfo">
+        <form action="" class="card-userinfo__form">
+          <label class="form-label">
+            Caldholder Name
+            <input
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+              class="form-input"
+            />
+          </label>
+
+          <label class="form-label">
+            Card Number
+            <input
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+              class="form-input"
+          /></label>
+
+          <div>
+            <label class="form-label">
+              Exp. Date (MM/YY)
+              <div>
+                <input type="text" placeholder="MM" class="form-input" />
+                <input type="text" placeholder="YY" class="form-input" />
+              </div>
+            </label>
+            <label class="form-label">
+              CVC <input type="text" placeholder="e.g. 123" class="form-input"
+            /></label>
+          </div>
+          <button type="submit" class="button-primary button-submit">
+            Confirm
+          </button>
+        </form>
+      </main>
+    </div>
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
